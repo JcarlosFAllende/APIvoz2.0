@@ -81,7 +81,7 @@ if(SpeechRecognition) {
       else if (transcript.toLowerCase().trim()==="libros"){
         window.open('https://www.elsotano.com/busqueda/listaLibros.php?tipoBus=full&tipoArticulo=&palabrasBusqueda='+searchFormInput.value);
       }
-      else if (transcript.toLowerCase().trim()==="pelicula"){
+      else if (transcript.toLowerCase().trim()==="video"){
         window.open('https://cuevana3.io/?s='+searchFormInput.value);
       }
       else if (transcript.toLowerCase().trim()==="salir del sitio"){
