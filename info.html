@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Reconocimiento de voz</title>
+
+   <!-- Font Awesome -->
+   <link
+   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+   rel="stylesheet"
+   />
+   <!-- Google Fonts -->
+   <link
+   href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+   rel="stylesheet"
+   />
+   <!-- MDB -->
+   <link
+   href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.3.0/mdb.min.css"
+   rel="stylesheet"
+   />
+   <link rel="stylesheet" href="styles.css">
+   <script src="main.js" defer></script>
+  
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/annyang/2.6.0/annyang.min.js"></script>
+  
+  </head>
+
+<body>
+
+ <!-- Image and text -->
+<nav class="navbar navbar-light bg-dark">
+   <div class="container-fluid">
+     <a class="navbar-brand" href="index.html">
+       <img
+         src="IconoAzulalto.png"
+         
+         height="30"
+         alt=""
+         loading="lazy"
+       />
+       
+       
+     </a>
+   </div>
+ </nav>
+<br>
+
+    <figure class="text-center">
+        <blockquote class="blockquote">
+          <p>
+            <b>RECONOCIMEINTO DE VOZ.</b>
+          </p>
+        </blockquote>
+        <figcaption class="blockquote-footer">
+          Guia para sistema <cite title="Source Title"></cite>
+          <img 
+          src="Google_Assistant_logo.gif"
+          style="width: 5%;"
+          alt="..."
+        />
+        </figcaption>
+    </figure>
+
+    <center>
+        <div class="row">
+            <div class="col">
+                <div class="card text-white bg-info mb-3" style="max-width: 18rem">
+                    <div class="card-header">Búsqueda multiple</div>
+                    <div class="card-body">
+                      <h5 class="card-title"></h5>
+                      <p class="card-text">
+                        busqueda simultanea en diferentes sitios.
+                      </p>
+                    </div>
+                  </div>
+            </div>
+
+
+            <div class="col order-1">
+                <div class="card text-white bg-secondary mb-3" style="max-width: 18rem">
+                    <div class="card-header">"Ayuda del sitio"</div>
+                    <div class="card-body">
+                      <h5 class="card-title"></h5>
+                      <p class="card-text">
+                        Al reconocer este comando de voz, se mandará a otra 
+                        pestaña ofreciendo más detalle de cada comando.
+                      </p>
+                    </div>
+                  </div>
+              
+            </div>
+
+
+
+            <div class="col order-5">
+              
+                <img
+                src="app_development_PNG.png"
+                
+                height="200"
+                alt=""
+                loading="lazy"
+              />
+
+            </div>
+          </div>          </div>
+
+          
+
+</center>
+
+</div>
+<div class="row justify-content-evenly">
+    <div class="col-8">
+        <div class="card text-white bg-success mb-3" style="max-width: 22rem">
+            <div class="card-header">"Frase + clave"</div>
+            <div class="card-body">
+              <h5 class="card-title"></h5>
+              <p class="card-text">
+                indicar frase por medio de voz seguido de la clave 
+                        (farmacia, sony, libros, películas, jugadores).
+              </p>
+            </div>
+          </div>
+    
+    </div>
+    
+  </div>
+  <div class="row justify-content-end">
+    <div class="col-8">
+        <div class="card text-white bg-danger mb-3" style="max-width: 22rem">
+            <div class="card-header">"Salir del sitio"</div>
+            <div class="card-body">
+              <h5 class="card-title"></h5>
+              <p class="card-text">
+                Al decir este comando se mostrará una ventana emergente diciendo si se quiere salir de la página.
+              </p>
+            </div>
+          </div>
+      
+    </div>
+    
+  </div>
+
+
+
+
+  
+
+<script type="text/javascript">
+ if(annyang){
+       var comandos = {
+         'regresar': function(){
+           alert("estás listo para regresar al inicio?");
+           window.open('index.html', '_blank');
+         }
+       };
+
+       annyang.addCommands(comandos);
+       annyang.setLanguage("es-Mx");
+
+       annyang.start();
+    }
+
+</script>
+
+   <!-- MDB -->
+   <script
+   type="text/javascript"
+   src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.3.0/mdb.min.js"
+   ></script>
+</body>
+</html>
