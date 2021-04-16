@@ -86,16 +86,8 @@ if(SpeechRecognition) {
       }
       else if (transcript.toLowerCase().trim()==="salir del sitio"){
        
-      var opc = confirm("¿Seguro que quieres salir?");
-        var mns;
-     
-     
-      if (opc == true) { 
-         window.close();     
-         recognition.stop();
-    } else {
-        mns = No";
-    }
+       window.alert("¿Pero por qué la cierras?");
+        window.close();
       }
       else if(transcript.toLowerCase().trim()==="borrar") {
         searchFormInput.value = "";
