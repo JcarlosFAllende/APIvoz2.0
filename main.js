@@ -86,8 +86,17 @@ if(SpeechRecognition) {
       }
       else if (transcript.toLowerCase().trim()==="salir del sitio"){
        
-       window.alert("¿Pero por qué la cierras?");
-        window.close();
+        var opcion=true;
+        var mns;
+        window.alert=salida;
+      
+        if (opcion){
+          mns=confirm('¿Seguro que quieres salir?');
+          if (mns){
+            window.close();}}
+            else{
+            return false;}
+       
       }
       else if(transcript.toLowerCase().trim()==="borrar") {
         searchFormInput.value = "";
