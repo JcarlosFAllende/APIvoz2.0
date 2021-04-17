@@ -91,7 +91,6 @@ if(SpeechRecognition) {
      
       if (opcion == true) { 
          window.close();     
-         recognition.stop();
     } else {
         mensaje = "No";
     }
