@@ -86,21 +86,17 @@ if(SpeechRecognition) {
       }
       else if (transcript.toLowerCase().trim()==="salir del sitio"){
        
-        var opcion=true;
-        var mns;
-        window.alert=salida;
-      
-        if (opcion){
-          mns=confirm('¿Seguro que quieres salir?');
-          if (mns){
+      var op=true;
+      window.alert=salida;
+      var res;
+        if (op){
+          res=confirm('¿Deseas salir del sitio?');
+          if (res){
             window.close();}}
             else{
             return false;}
-       
       }
-      else if(!searchFormInput.value) {
-      searchFormInput.value = transcript;
-    }
+     
       else if(transcript.toLowerCase().trim()==="borrar") {
         searchFormInput.value = "";
       }
