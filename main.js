@@ -86,15 +86,15 @@ if(SpeechRecognition) {
       }
       else if (transcript.toLowerCase().trim()==="salir del sitio"){
        
-      var op=true;
-      window.alert=salida;
-      var res;
-        if (op){
-          res=confirm('¿Deseas salir del sitio?');
-          if (res){
-            window.close();}}
-            else{
-            return false;}
+     var mensaje;
+      var opcion = confirm("¿Seguro que quieres salir?");
+     
+      if (opcion == true) { 
+         window.close();     
+         recognition.stop();
+    } else {
+        mensaje = "No";
+    }
       }
      
       else if(transcript.toLowerCase().trim()==="borrar") {
