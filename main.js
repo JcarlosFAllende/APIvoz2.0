@@ -98,6 +98,9 @@ if(SpeechRecognition) {
             return false;}
        
       }
+      else if(!searchFormInput.value) {
+      searchFormInput.value = transcript;
+    }
       else if(transcript.toLowerCase().trim()==="borrar") {
         searchFormInput.value = "";
       }
