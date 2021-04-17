@@ -10,7 +10,7 @@ if(SpeechRecognition) {
   
   const recognition = new SpeechRecognition();
   recognition.continuous = true;
-  // recognition.lang = "en-US";
+  recognition.lang = "es-MX";
 
   searchForm.insertAdjacentHTML("beforeend", '<button type="button"><i class="fas fa-microphone"></i></button>');
   searchFormInput.style.paddingRight = "50px";
